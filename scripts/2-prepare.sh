@@ -7,7 +7,7 @@ cat ${DDIR}/raw-all/*.en > ${DDIR}/all.en
 cat ${DDIR}/raw-all/*.et > ${DDIR}/all.et
 
 echo "Tab-joining and shuffling et and en corpora"
-paste ${DDIR}/demo-all.{et,en} | shuf > ${DDIR}/mixed-data.both
+paste ${DDIR}/all.{et,en} | shuf > ${DDIR}/mixed-data.both
 
 echo "Spliting corpus"
 sed -n 1,100p ${DDIR}/mixed-data.both | cut -f 1 > ${DDIR}/test.et

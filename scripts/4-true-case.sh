@@ -17,6 +17,7 @@ for lang in en et;
 do
  for f in $DDIR/{test,dev,train}.$lang ;
  do
- $ROOT/OpenNMT-py/tools/truecase.perl --model $lang-truecase.mdl < $DDIR/tok-$f > $DDIR/tc-tok-$f
+ bname=$(basename $f)
+ $ROOT/OpenNMT-py/tools/truecase.perl --model $DDIR/$lang-truecase.mdl < $DDIR/tok-$bname > $DDIR/tc-tok-$bname
  done
 done

@@ -12,7 +12,7 @@
 #The maximum walltime of the job is a 8 day
 #SBATCH -t 192:00:00
 
-#SBATCH --mem=150G
+#SBATCH --mem=80G
 
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:tesla:1
@@ -24,7 +24,7 @@ source env.sh
 echo
 echo Starting to train
 
-python $ROOT/OpenNMT-py/train.py -data $DDIR/rdy -save_model $ROOT/model/toneko-model --gpuid 0
+python $ROOT/OpenNMT-py/train.py -data $DDIR/rdy -save_model $ROOT/models/toneko-model -gpuid 0
 
 echo
 echo Training completed

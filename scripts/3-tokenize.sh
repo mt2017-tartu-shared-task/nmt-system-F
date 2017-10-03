@@ -22,5 +22,8 @@ chmod +x $ROOT/OpenNMT-py/tools/*.perl
 echo Tokenizing
 for f in $DDIR/{test,dev,train}.{en,et}
 do
+	echo "Working with file: $f"
 	$ROOT/OpenNMT-py/tools/tokenizer.perl < $f > $DDIR/tok-$(basename $f)
 done
+
+echo Tokenization complete

@@ -36,3 +36,5 @@ do
  $ROOT/OpenNMT-py/tools/truecase.perl --model $DDIR/$lang-truecase.mdl < $DDIR/tok-$bname > $DDIR/tc-tok-$bname
  done
 done
+
+echo True-casin complete

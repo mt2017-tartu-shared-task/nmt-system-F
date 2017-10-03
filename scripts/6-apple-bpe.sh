@@ -17,7 +17,7 @@ source env.sh
 
 echo
 echo Apple BPE
-cat $DDIR/cleaned-tc-tok-train.et $DDIR/cleaned-tc-tok-train.en | python $ROOT/OpenNMT-py/tools/subword-nmt/learn_bpe.py -s 10000 > $DDIR/eten.bpe
+cat $DDIR/cleaned-tc-tok-train.et $DDIR/cleaned-tc-tok-train.en | python $ROOT/OpenNMT-py/tools/subword-nmt/learn_bpe.py -s 100000 > $DDIR/eten.bpe
 echo 
 echo Learned.
 echo

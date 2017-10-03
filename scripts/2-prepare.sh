@@ -26,9 +26,11 @@ paste ${DDIR}/all.{et,en} | shuf > ${DDIR}/mixed-data.both
 lines=$(wc -l ../data/mixed-data.both | cut -f 1 -d ' ')
 
 echo "Spliting corpus"
-sed -n 1,100000p ${DDIR}/mixed-data.both | cut -f 1 > ${DDIR}/test.et
-sed -n 1,100000p ${DDIR}/mixed-data.both | cut -f 2 > ${DDIR}/test.en
-sed -n 100001,200000p ${DDIR}/mixed-data.both | cut -f 1 > ${DDIR}/dev.et
-sed -n 100001,200000p ${DDIR}/mixed-data.both | cut -f 2 > ${DDIR}/dev.en
-sed -n 200001,${lines}p ${DDIR}/mixed-data.both | cut -f 1 > ${DDIR}/train.et
-sed -n 200001,${lines}p ${DDIR}/mixed-data.both | cut -f 2 > ${DDIR}/train.en
+sed -n 1,50000p ${DDIR}/mixed-data.both | cut -f 1 > ${DDIR}/test.et
+sed -n 1,50000p ${DDIR}/mixed-data.both | cut -f 2 > ${DDIR}/test.en
+sed -n 50001,75000p ${DDIR}/mixed-data.both | cut -f 1 > ${DDIR}/dev.et
+sed -n 50001,75000p ${DDIR}/mixed-data.both | cut -f 2 > ${DDIR}/dev.en
+sed -n 75001,${lines}p ${DDIR}/mixed-data.both | cut -f 1 > ${DDIR}/train.et
+sed -n 75001,${lines}p ${DDIR}/mixed-data.both | cut -f 2 > ${DDIR}/train.en
+
+echo "Splitting complete"

@@ -24,7 +24,7 @@ source env.sh
 echo
 echo Starting to train
 
-python $ROOT/OpenNMT-py/train.py -data $DDIR/rdy -save_model $ROOT/models/toneko-model -gpuid 0
+stdbuf -oL python $ROOT/OpenNMT-py/train.py -data $DDIR/rdy -save_model $ROOT/models/toneko-model -gpuid 0
 
 echo
 echo Training completed

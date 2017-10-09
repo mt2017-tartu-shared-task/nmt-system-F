@@ -1,4 +1,4 @@
-[B# Milestone 1: Hand in the baseline system and translation  [Report]
+# Milestone 1: Hand in the baseline system and translation  [Report]
 TEAMNAME team:
  * @eruizdeloizaga002
  * @vampnik

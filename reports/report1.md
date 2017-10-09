@@ -21,14 +21,14 @@ Starting from raw data, we applied following preprocessing steps:
 We used [Moses](http://www.statmt.org/moses/) scripts to do basic preprocessing, and [BPE](https://github.com/rsennrich/subword-nmt) for the subword segmentation. 
 
 ### Model Training
-We used 1 Tesla P100 GPU Machine provided by [HPC center of the University of Tartu](https://www.hpc.ut.ee/en_US/web/guest/home) to train our model with vocablary of size __N__. The model we trained is the default [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) model, which consists of a 2-layer LSTM with 500 hidden units on both the encoder/decoder.
+We used 1 Tesla P100 GPU Machine provided by [HPC center of the University of Tartu](https://www.hpc.ut.ee/en_US/web/guest/home) to train our model with vocablary of size 100000. The model we trained is the default [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) model, which consists of a 2-layer LSTM with 500 hidden units on both the encoder/decoder.
 
 We had trained our best model for ~5 days, 8 epochs. Development set perplexity was 4.94 We performed early stopping to stop the training process. You can find the script we used to run training here (<https://github.com/mt2017-tartu-shared-task/nmt-system-F/blob/master/scripts/8-train.sh>).
 
 ### Translating and Evaluating Results
 We performed an inference and got unpostprocessed English hyps file. 
 
-We used this file, processed reference file, and BLEU metric to evaluate the translation performance of our model, and got __X__ points.
+We used this file, processed reference file, and BLEU metric to evaluate the translation performance of our model, and got 21.84 points.
 
 _________________________________________________________________________________________________________________
 For the next milestone, we will focus on some more advanced evaluation and error analysis technics.    

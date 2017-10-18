@@ -35,7 +35,7 @@ We used this file, processed reference file, and BLEU metric to evaluate the tra
 
 ### Additional notes
 
-Preprocessing script is CPU memory heavy. They require ~110GB of memory andonly falcon1 and falcon2 can accomodate (both have ~250GB of memory). This scripts completes with ~2 hours. However training requires <80GB of CPU memory (tested with 80GB). Therefore no team should run their training with 150GB because it will prevent other teams from running the preprocessing script for ~8 days. We got around this by utilizing Amazon AWS EC2 instance with enough memory to run preprocessing script. Also there may be room for optimization of the preprocess.py script as this memory-heaviness has also been examined in OpenNMT github issue management: <https://github.com/OpenNMT/OpenNMT-py/issues/198#issuecomment-331274434>
+Preprocessing script is CPU memory heavy. It requires ~110GB of memory and only falcon1 and falcon2 can accomodate (both have ~250GB of memory). This scripts completes with ~2 hours. However training requires <80GB of CPU memory (tested with 80GB). Therefore no team should run their training with 150GB because it will prevent other teams from running the preprocessing script for ~8 days. We got around this by utilizing Amazon AWS EC2 instance with enough memory to run preprocessing script. Also there may be room for optimization of the preprocess.py script as this memory-heaviness has also been examined in OpenNMT github issue management: <https://github.com/OpenNMT/OpenNMT-py/issues/198#issuecomment-331274434>
 
 _________________________________________________________________________________________________________________
 For the next milestone, we will focus on some more advanced evaluation and error analysis technics.    

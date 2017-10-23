@@ -27,11 +27,11 @@ for lang in en et ; do
 
 done
 
-$ROOT/OpenNMT-py/tools/clean-corpus-n.perl $DDIR/tc-tok-accurate-dev en et $DDIR/cleaned-tc-tok-accurate-dev 1 100
+#$ROOT/OpenNMT-py/tools/clean-corpus-n.perl $DDIR/tc-tok-accurate-dev en et $DDIR/cleaned-tc-tok-accurate-dev 1 100
 
 echo Starting to apply BPE to accurate
 
 stdbuf -oL  python $ROOT/OpenNMT-py/tools/subword-nmt/apply_bpe.py -c $DDIR/eten.bpe < $DDIR/cleaned-tc-tok-accurate-dev.et > $DDIR/bpe.accurate.et
-stdbuf -oL  python $ROOT/OpenNMT-py/tools/subword-nmt/apply_bpe.py -c $DDIR/eten.bpe < $DDIR/cleaned-tc-tok-accurate-dev.et > $DDIR/bpe.accurate.en
+stdbuf -oL  python $ROOT/OpenNMT-py/tools/subword-nmt/apply_bpe.py -c $DDIR/eten.bpe < $DDIR/cleaned-tc-tok-accurate-dev.en > $DDIR/bpe.accurate.en
 
 echo Done

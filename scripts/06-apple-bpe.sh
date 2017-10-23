@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #The name of the job is test_job
-#SBATCH -J toneko-6
+#SBATCH -J toneko06
 
 #The job requires 1 compute node
 #SBATCH -N 1

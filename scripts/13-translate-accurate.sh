@@ -21,6 +21,6 @@ module load python-2.7.13
 
 source env.sh
 
-stdbuf -oL python $ROOT/OpenNMT-py/translate.py -attn_debug -model $ROOT/models/toneko-model_acc_71.01_ppl_4.08_e13.pt -src $DDIR/bpe.accurate.et -output $ROOT/hyps/accurate-hyps.en -gpu 0
+stdbuf -oL python $MROOT/lab3/OpenNMT-py/translate.py -attn_debug -model $ROOT/models/toneko-model_acc_71.01_ppl_4.08_e13.pt -src $DDIR/bpe.accurate.et -output $ROOT/hyps/accurate-hyps.en -gpu 0
 
 echo Done!

@@ -1,4 +1,4 @@
-*INTERMIEDIATE REPORT*
+# INTERMIEDIATE REPORT
 
 We had some issues training our data. First of all, we had to generate an XML file just to have the information (noun, adjective…) about each word. With this he had problems generating the XML file like:
 

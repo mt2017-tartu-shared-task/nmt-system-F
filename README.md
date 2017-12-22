@@ -2,7 +2,7 @@
 This repository is a result of our participation in the shared task.<br>
 We went through the process of building, analyzing, and improving the neural machine translation system.
 
-Poster: [link]()
+Poster: [link](https://github.com/mt2017-tartu-shared-task/nmt-system-F/blob/master/Machine%20Translation%20poster.pdf)
 
 The shared task was for Estonian-English language pair. 
 It included working with ~19.000.000 sentence pairs.
@@ -34,7 +34,7 @@ More details: [link](https://github.com/mt2017-tartu-shared-task/nmt-system-F/bl
 More details: [link report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-F/blob/master/reports/report3.md).<br>
 [link report 4](https://github.com/mt2017-tartu-shared-task/nmt-system-F/blob/master/reports/report4.md).
 
-Do not forget to check our poster: [__POSTER_LINK__]
+Do not forget to check our poster: [link](https://github.com/mt2017-tartu-shared-task/nmt-system-F/blob/master/Machine%20Translation%20poster.pdf)
 
 ## What we also tried or wanted to try
 We tried to include Standford CoreNPL. Stanford CoreNLP provides a set of human language technology tools. It can give the base forms of words, their parts of speech, whether they are names of companies, people, etc., normalize dates, times, and numeric quantities, mark up the structure of sentences in terms of phrases and syntactic dependencies, indicate which noun phrases refer to the same entities, indicate sentiment, extract particular or open-class relations between entity mentions, get the quotes people said, etc. So, with this, we wanted to fix some sintactical problems of our system. But we could not.

@@ -1,8 +1,8 @@
-# __TEAMNAME__ In-class Machine Translation Shared Task 2017 Submission
+# TONEKO. In-class Machine Translation Shared Task 2017 Submission
 This repository is a result of our participation in the shared task.<br>
 We went through the process of building, analyzing, and improving the neural machine translation system.
 
-Poster: [link]() // feel later, no need to feel now
+Poster: [link]()
 
 The shared task was for Estonian-English language pair. 
 It included working with ~19.000.000 sentence pairs.
